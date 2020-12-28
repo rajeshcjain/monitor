@@ -1,0 +1,22 @@
+Pre-requisite 
+Java 8.0.
+
+##MariaDB is being used for the storage of the data.
+
+##Please run the below commands to start the docker
+
+docker run --name blue-optima-mariadb -p 3307:3306 -e MYSQL_ROOT_PASSWORD=blueoptima -d mariadb/server:10.4
+
+docker exec -it blue-optima-mariadb bash
+
+##Redis - docker 
+
+docker run --name blue-optima-redis -d redis
+
+docker exec -it blue-optima-redis bash
+
+
+
+
+
+
